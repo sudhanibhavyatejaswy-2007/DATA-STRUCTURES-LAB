@@ -2,17 +2,22 @@
 using namespace std;
 int main()
 {
-int n,count=0;
-cout<<"Enter n value:";
-cin>>n;
-for(int i=1;i<=n;i++)
+int a,b;
+char op;
+cout<<"Enter a and b values";
+cin>>a>>b;
+cout<<"Enter operator";
+cin>>op;
+switch(op)
 {
-if(n%i==0)
-cout<<i;
-count=count+i;
+case'+':cout<<"addition:"<<a+b;
+        break:
+case'-':cout<<"substration:"<<a-b;
+        break:
+case'/':cout<<"division:"<<a/b;
+        break:
+case'%':cout<<"modulas:"<<a%b;
+        break:
+default:cout<<"invalid operator";
 }
-if(count==2)
-cout<<n<<"is prime number";
-else
-cout<<n<<"is not a prime number";
 }
